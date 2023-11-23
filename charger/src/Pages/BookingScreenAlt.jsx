@@ -2,8 +2,7 @@ import Button from "react-bootstrap/Button";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
-import Image from "react-bootstrap/Image";
-import mapImage from "../assets/images/map.png";
+import Map from "../components/Map/Map";
 
 export default function BookingScreenAlt() {
   return (
@@ -51,7 +50,9 @@ export default function BookingScreenAlt() {
     `}</style>
 
       <div id="container" className="vh-100">
-        <Image className="mb-4 vw-100" src={mapImage} alt="Map image" fluid />
+        <div className="mb-5">
+          <Map />
+        </div>
 
         <section className="mx-4">
           <h2 className="font-customized mb-4 me-5 text-color">

@@ -3,8 +3,7 @@ import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Form from "react-bootstrap/Form";
-import Image from "react-bootstrap/Image";
-import mapImage from "../assets/images/map.png";
+import Map from "../components/Map/Map";
 
 export default function BookingScreen() {
   return (
@@ -47,10 +46,16 @@ export default function BookingScreen() {
       color: #00513A;
     }
 
+    #map { 
+      height: 180px; 
+    }
+
     `}</style>
 
       <div id="container" className="vh-100">
-        <Image className="mb-4 vw-100" src={mapImage} alt="Map image" fluid />
+        <div className="mb-5">
+          <Map />
+        </div>
 
         <section className="mx-4">
           <Form.Control
@@ -81,9 +86,9 @@ export default function BookingScreen() {
           <div className="d-grid gap-2 fixed-bottom mx-4">
             <Breadcrumb>
               <Breadcrumb.Item className="text-white" href="#">
-                <a className="link-success" href="#">
+                <button className="link-success" href="#">
                   Terms and Conditions of use
-                </a>
+                </button>
               </Breadcrumb.Item>
             </Breadcrumb>
             <Button
