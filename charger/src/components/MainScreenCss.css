@@ -1,0 +1,27 @@
+.userlogin{
+  background-color:#00513A;
+  border:none;
+  border-radius:100px;
+  width:50px;
+  height:50px;
+}
+
+.mainscreen{
+  display:flex;
+  flex-direction:row;
+}
+
+
+/* Add a media query for screens with a maximum width of 768 pixels */
+@media (max-width: 768px) {
+  .mainscreen {
+    flex-direction: column; /* Change to a column layout on smaller screens */
+    align-items: center; /* Center items in the column */
+  }
+
+  .booking {
+    flex-direction: column; /* Change to a column layout on smaller screens */
+    align-items: center; /* Center items in the column */
+    margin: 0; /* Remove the left and right margin */
+  }
+}
