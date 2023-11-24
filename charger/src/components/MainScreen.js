@@ -13,6 +13,7 @@ import "./MainScreenCss.css";
 
 export default function MainScreen(){
   return(
+    // Version 1, page is not responsive. Need to include @media or migrate to complete bootstrap components 
     <div className="frontpage">
       <div className="mainscreen"  style={{'display':'flex','flexDirection':'row','justifyContent':'spaceBetween','alignItems':'center','margin':'5px','marginBottom':'10px'}}>
         <h3 className="h3" style={{'marginRight':'auto'}}>LOGO HERE</h3>
@@ -83,7 +84,7 @@ export default function MainScreen(){
             <img src={line} />
           </div>
         </div>
-        <img className="img-fluid" src={gps} style={{'padding':'1rem'}} />
+        <img className="img-fluid" src={gps} style={{'padding':'1rem'}} /> {/* Replace with React-leaflet component later*/}
         <button className="btn btn-primary" style={{ width: '100%', borderRadius: '8px','backgroundColor':'#00513A', 'margin':'2rem 0' }}>Find me a charging station</button>
       </div>
     </div>
