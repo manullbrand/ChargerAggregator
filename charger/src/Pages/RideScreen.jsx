@@ -1,6 +1,5 @@
 import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
-import mapImage2 from "../assets/images/map2.png";
+import Map from "../components/Map.jsx";
 
 export default function RideScreen() {
   return (
@@ -49,12 +48,7 @@ export default function RideScreen() {
     `}</style>
 
       <div id="container" className="vh-100">
-        <Image
-          className="map-customized vw-100"
-          src={mapImage2}
-          alt="Map image"
-          fluid
-        />
+        <Map />
 
         <section>
           <div className="my-5 ms-5 ps-4">

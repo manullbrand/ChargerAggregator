@@ -3,7 +3,7 @@ import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Form from "react-bootstrap/Form";
-import Map from "../components/Map/Map";
+import Map from "../components/Map.jsx";
 
 export default function BookingScreen() {
   return (

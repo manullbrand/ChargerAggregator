@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
-import Map from "../components/Map/Map";
+import Map from "../components/Map.jsx";
 
 export default function BookingScreenAlt() {
   return (
