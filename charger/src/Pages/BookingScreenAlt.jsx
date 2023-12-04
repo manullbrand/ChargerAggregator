@@ -50,11 +50,9 @@ export default function BookingScreenAlt() {
     `}</style>
 
       <div id="container" className="vh-100">
-        <div className="mb-5">
-          <Map />
-        </div>
+        <Map currentPage="booking" />
 
-        <section className="mx-4">
+        <section className="mt-4 mx-4">
           <h2 className="font-customized mb-4 me-5 text-color">
             When do you want to use the selected charging station?
           </h2>

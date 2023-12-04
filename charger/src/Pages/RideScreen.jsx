@@ -48,7 +48,7 @@ export default function RideScreen() {
     `}</style>
 
       <div id="container" className="vh-100">
-        <Map />
+        <Map currentPage="ride"/>
 
         <section>
           <div className="my-5 ms-5 ps-4">
