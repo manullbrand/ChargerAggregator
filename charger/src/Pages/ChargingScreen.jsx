@@ -1,4 +1,5 @@
 import Button from "react-bootstrap/Button";
+
 import ChargingProgressBar from "../components/ChargingProgressBar";
 
 export default function RideScreen() {
