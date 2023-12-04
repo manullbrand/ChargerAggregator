@@ -1,5 +1,7 @@
 import Button from "react-bootstrap/Button";
 
+import ChargingProgressBar from "../components/ChargingProgressBar";
+
 export default function RideScreen() {
   return (
     <>
@@ -72,11 +74,7 @@ export default function RideScreen() {
 
       <div id="container" className="vh-100">
         <section className="d-flex justify-content-center ">
-          <div className="position-relative progress-wrapper my-5 ">
-            <div className="d-flex h-100 justify-content-center mt-5 position-relative progress-circle w-100">
-              <div className="position-absolute progress-text">50%</div>
-            </div>
-          </div>
+          <ChargingProgressBar />
         </section>
 
         <section>
