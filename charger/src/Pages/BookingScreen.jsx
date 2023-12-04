@@ -3,7 +3,7 @@ import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Form from "react-bootstrap/Form";
-import Map from "../components/Map/Map";
+import Map from "../components/Map.jsx";
 
 export default function BookingScreen() {
   return (
@@ -53,11 +53,9 @@ export default function BookingScreen() {
     `}</style>
 
       <div id="container" className="vh-100">
-        <div className="mb-5">
-          <Map />
-        </div>
+        <Map currentPage="booking" />
 
-        <section className="mx-4">
+        <section className="mt-5 mx-4">
           <Form.Control
             id="form-input"
             className="mb-5 p-2 rounded-3"
@@ -86,9 +84,9 @@ export default function BookingScreen() {
           <div className="d-grid gap-2 fixed-bottom mx-4">
             <Breadcrumb>
               <Breadcrumb.Item className="text-white" href="#">
-                <button className="link-success" href="#">
+                <a className="link-success" href="#">
                   Terms and Conditions of use
-                </button>
+                </a>
               </Breadcrumb.Item>
             </Breadcrumb>
             <Button
